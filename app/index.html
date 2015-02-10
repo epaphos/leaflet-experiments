@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+<head>
+  <meta charset="utf-8">
+
+  <title>leaflet-directive experiments</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+</head>
+<body ng-controller="SimpleMapController">
+  <!-- <body ng-controller="OtherMapController"> -->
+
+
+  <ul>
+        <li><strong ng-bind="eventDetected"></strong> caught in listener.</li>
+    </ul>
+
+  <!--It is important to give the map a height, otherwise it won't show up.  -->
+  <leaflet height="480px" event-broadcast="events">hi</leaflet>
+
+  <!-- <map> -->
+  
+  <!-- Scripts -->
+  <script src="bower_components/angular/angular.js"></script>
+  <!-- <script src="bower_components/angular-route/angular-route.js"></script> -->
+  <script src="app.js"></script>
+
+
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+  <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+
+  <!-- Controllers -->
+  <script src="controllers/mapCtrl.js"></script>
+  <script src="controllers/othermapCtrl.js"></script>
+
+  <!-- Directives -->
+  <script src="directives/map.js"></script>
+
+</body>
+</html>
